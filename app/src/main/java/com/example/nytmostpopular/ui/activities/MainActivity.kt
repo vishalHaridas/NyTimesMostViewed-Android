@@ -1,0 +1,24 @@
+package com.example.nytmostpopular.ui.activities
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.nytmostpopular.R
+import com.example.nytmostpopular.ui.ArticleFragmentFactory
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+
+
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var fragmentFactory: ArticleFragmentFactory
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        supportFragmentManager.fragmentFactory = fragmentFactory
+
+        setContentView(R.layout.activity_main)
+    }
+
+}

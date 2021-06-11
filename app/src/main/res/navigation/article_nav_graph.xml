@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/article_nav_graph"
+    app:startDestination="@id/articleListFragment">
+    <fragment
+        android:id="@+id/articleListFragment"
+        android:name="com.example.nytmostpopular.ui.fragments.ArticleListFragment"
+        android:label="ArticleListFragment" >
+        <action
+            android:id="@+id/action_articleListFragment_to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="com.example.nytmostpopular.ui.fragments.ArticleWebFragment"
+        android:label="ArticleDetailsFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.example.nytmostpopular.data.local.models.Article" />
+    </fragment>
+</navigation>
