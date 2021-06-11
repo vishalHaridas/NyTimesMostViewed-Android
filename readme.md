@@ -5,7 +5,7 @@
 * Room & Retrofit2 (designed with single truth repository)
 * Kotlin Corourines, LiveData & Flow
 * Dagger HILT  
-* ![Repository holds single truth](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png "Single Truth Repository")
+![Repository holds single truth](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png "Single Truth Repository")
 
 ## Installation
 Clone this repository and import into **Android Studio**
