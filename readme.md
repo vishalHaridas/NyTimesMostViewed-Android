@@ -4,6 +4,7 @@
 * Clean architecture with MVVM
 * Room & Retrofit2 (designed with single truth repository)
 * Kotlin Corourines, LiveData & Flow
+* WebView
 * Navigation Components
 * Dagger HILT  
 ![Repository holds single truth](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png "Single Truth Repository")
